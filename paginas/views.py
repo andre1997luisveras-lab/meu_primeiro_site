@@ -9,12 +9,17 @@ def inicio(request):
         "cursos": ["Python", "Django", 2 , 1],
         "hobbies": ["Jogar", "Comer", "Dormir", "Ver filmes"],
     }
+
     return render(request, "inicio.html", contexto)
 
+def projetos(request):
+    proje = {
+        "projetos": ["Calculadora em Python", "Mercadinho no Colab", "Site em Django"],
+    }
+    return render(request, "projetos.html", proje)
 
 def sobre(request):
-    return render(request, "sobre.html", sobre)
-
+    return render(request, "sobre.html",)
 
 def contato(request):
     return render(request, "contato.html")

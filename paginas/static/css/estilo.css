@@ -1,0 +1,27 @@
+    <style>
+        body {font-family: Arial; margin: 40px;}
+        header { background: #3FB8AF; 
+            color: #fff7ec; padding: 20px;}
+        h2 {font-size: 30px;}
+        nav a {color:#FF3D7F}
+        footer {color: #3FB8AF; margin-top: 30pc;}
+    
+    .cartao { list-style: none;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nava { background-color: #ffffff; margin: 3px;
+        color: #FF3D7F;
+        border: 1px solid #cccccc;
+        border-radius: 6px;
+        padding: 6px 12px;
+        margin-bottom: 6px;
+    }
+    .nava:hover {
+        background-color: #ff9e9d;
+    }
+    </style>

@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 
 {% block conteudo %}
-    <h2>Bem-vindo!</h2>
+    <h2 style="color: #3FB8AF;">Bem-vindo!</h2>
     <p> Olá, {{nome}} Este é o meu site feito com Django!</p>
-    <h3>Estou aprendendo:</h3>
+    <h3 style="color: #3FB8AF">Estou aprendendo:</h3>
     <ul>
-        {% for curso in cursos %}
-            <li>{{ curso }}</li>
+        {% for item in cursos %}
+            <li>{{ item }}</li>
         {% endfor %}
     </ul>
+
+    <img src="https://i.pinimg.com/originals/de/b0/42/deb042c49226a4bda058eb55d8bf7a1b.png" width="300">
+
+
 {% endblock %}
 
 </body>
-</html>
+</html
