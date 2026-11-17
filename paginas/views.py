@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Livros
+from .models import Projetos
+
 
 def inicio(request):
     contexto = {
@@ -13,10 +16,10 @@ def inicio(request):
     return render(request, "inicio.html", contexto)
 
 def projetos(request):
-    proje = {
-        "projetos": ["Calculadora em Python", "Mercadinho no Colab", "Site em Django"],
+    projetos = {
+        "projetos": Projetos.objects.all()
     }
-    return render(request, "projetos.html", proje)
+    return render(request, "projetos.html", projetos)
 
 def sobre(request):
     return render(request, "sobre.html",)

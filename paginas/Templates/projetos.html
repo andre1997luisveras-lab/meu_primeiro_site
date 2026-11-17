@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
 {% block conteudo %}
-    <h2 style="color: #3FB8AF;">Meus projetos:</h2>
+    <h2 style="color: #3FB8AF;">Meus Livros:</h2>
     <ul>
         {% for item in projetos %}
-            <li class="cartao">{{ item }}</li>
+            <li class="cartao">
+                <strong>{{ item.titulo }}</strong>
+                <p>{{ item.descricao }}</p>
+            </li>
         {% endfor %}
 {% endblock %}
