@@ -7,9 +7,16 @@
             <li class="cartao">
                 <strong>{{ item.nome }}</strong>
                 <p>{{ item.descricao }}</p>
-                <p>{{ item.data_criacao }}</p>
+                <p>{{ item.ano }}</p>
                 <p> {{ item.linguagem }}</p>
                 <p>{{ item.categoria }}</p>
             </li>
         {% endfor %}
 {% endblock %}
+
+.tag {
+    background-color: #E3F4EA;
+    color: #2B7A5B;
+    padding: 2px 8px;
+    border-radius: 10px;
+}

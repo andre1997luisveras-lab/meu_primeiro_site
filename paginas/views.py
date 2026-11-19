@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Livros, Categoria
-from .models import Projetos
+from .models import Categoria, Projetos
+from .models import Livros
 
 
 def inicio(request):
@@ -29,6 +29,7 @@ def contato(request):
 
 def categoria(request):
     contexto = {
-        "categorias": Categoria.objects.all()
+        "categorias": Categoria.objects.all(),
     }
-    return render(request, "categoria.html", contexto)
+    return render(request, "categoria.html",
+                  contexto)

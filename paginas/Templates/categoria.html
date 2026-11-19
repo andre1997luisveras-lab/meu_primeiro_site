@@ -1,7 +1,5 @@
 {%extends "base.html"%}
 
-{% extends "base.html" %}
-
 {% block conteudo %}
     <h1>Minhas Categorias</h1>
     <ul>
@@ -12,7 +10,7 @@
                 <p><strong>Projetos desta categoria:</strong></p>
                 <ul>
                     {% for proj in item.projetos_set.all %}
-                        <li>{{ proj.nome }} ({{ proj.data_criacao }})</li>
+                        <li>{{ proj.nome }} ({{ proj.ano }})</li>
                     {% empty %}
                         <li>Nenhum projeto cadastrado nesta categoria ainda</li>
                     {% endfor %}
