@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Livros
+from .models import Livros, Categoria
 from .models import Projetos
 
 
@@ -26,3 +26,9 @@ def sobre(request):
 
 def contato(request):
     return render(request, "contato.html")
+
+def categoria(request):
+    contexto = {
+        "categorias": Categoria.objects.all()
+    }
+    return render(request, "paginas/categoria.html", contexto)
