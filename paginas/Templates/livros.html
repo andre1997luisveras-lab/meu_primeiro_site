@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+
+{% block context %}
+    <h1>Meus Livros</h1>
+    <ul>
+        {% for item in livros %}
+            <li class="cartao">
+                <h2><strong>{{ item.nome }}</strong></h2>
+                <p><strong>Autor:</strong> {{ item.autor }}</p>
+                <p><strong>Ano de Publicação:</strong> {{ item.ano_publicacao }}</p>
+                <p><strong>Gênero:</strong> {{ item.genero }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
