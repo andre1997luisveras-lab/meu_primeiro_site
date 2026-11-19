@@ -31,4 +31,4 @@ def categoria(request):
     contexto = {
         "categorias": Categoria.objects.all()
     }
-    return render(request, "paginas/categoria.html", contexto)
+    return render(request, "categoria.html", contexto)
