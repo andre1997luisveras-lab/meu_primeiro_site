@@ -7,14 +7,14 @@
         footer {color: #3FB8AF; margin-top: 30pc;}
     
     .cartao { list-style: none;
-        background-color: #ffffff;
-        border: 1px solid #cccccc;
+        background-color: #f1adff;
+        border: 1px solid #b964ff;
         border-radius: 8px;
         padding: 10px;
         margin-bottom: 10px;
     }
 
-    .nava { background-color: #ffffff; margin: 3px;
+    .nava { background-color: #f1adff; margin: 3px;
         color: #FF3D7F;
         border: 1px solid #cccccc;
         border-radius: 6px;
@@ -24,4 +24,12 @@
     .nava:hover {
         background-color: #ff9e9d;
     }
+
+    .tag { background-color: #E3F4EA;
+        color: #2B7A5B;
+        padding: 2px 8px;
+        border-radius: 10px;
+    }
+
+    
 </style>

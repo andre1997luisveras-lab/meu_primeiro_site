@@ -1,22 +1,18 @@
 {% extends "base.html" %}
 
 {% block conteudo %}
-    <h2 style="color: #3FB8AF;">Meus Projetos:</h2>
-    <ul>
-        {% for item in projetos %}
-            <li class="cartao">
-                <strong>{{ item.nome }}</strong>
-                <p>{{ item.descricao }}</p>
-                <p>{{ item.ano }}</p>
-                <p> {{ item.linguagem }}</p>
-                <p>{{ item.categoria }}</p>
-            </li>
-        {% endfor %}
-{% endblock %}
+    <h1>Meus Projetos</h1>
 
-.tag {
-    background-color: #E3F4EA;
-    color: #2B7A5B;
-    padding: 2px 8px;
-    border-radius: 10px;
-}
+    <ul>
+        {% for p in projetos %}
+            <li>
+                <a href="/projetos/{{ p.id }}/">{{ p.nome }}</a>
+            </li>
+        {% empty %}
+            <p>Nenhum projeto cadastrado ainda.</p>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="/projetos/novo/">+ Novo projeto</a>
+{% endblock %}

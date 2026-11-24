@@ -25,4 +25,7 @@ urlpatterns = [
     path('contato',views.contato),
     path('projetos/', views.projetos),
     path('categoria/', views.categoria),
+    path('projetos/novo/', views.novo_projeto),
+    path('projetos/<int:id>/', views.detalhe_projeto),
+    path('projetos/<int:id>/editar/', views.editar_projeto),
 ]

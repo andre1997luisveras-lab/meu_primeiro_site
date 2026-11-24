@@ -9,6 +9,7 @@ class Livros(models.Model):
     descricao = models.TextField(max_length=200)
     ano = models.IntegerField()
 
+
 class Categoria(models.Model):
     nome = models.CharField(max_length=100)
 
@@ -17,12 +18,13 @@ class Categoria(models.Model):
 
 class Projetos(models.Model):
     nome = models.CharField(max_length=100)
-    descricao = models.TextField(max_length=200)
-    ano = models.IntegerField()
+    descricao = models.TextField(max_length=200) 
+    ano = models.IntegerField()                   
     linguagem = models.CharField(max_length=50)
     categoria = models.ForeignKey(
         Categoria,
         on_delete= models.SET_NULL,
         null= True,
-        blank= True,    )
-    
+        blank= True,
+    )
+    concluido = models.BooleanField(default=False)
