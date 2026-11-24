@@ -11,7 +11,7 @@
             <p>Em andamento</p>
         {% endif %}
 
-    <a href="/projetos/{{ projeto.id }}/editar/">Editar</a> | 
-    <a href="/projetos/{{ projeto.id }}/excluir/">Excluir</a> |
-    <a href="/projetos/">Voltar</a>
+    <div class="botao-azul "><a href="/projetos/{{ projeto.id }}/editar/">Editar</a></div>
+    <div class="botao-vermelho "><a href="/projetos/{{ projeto.id }}/excluir/">Excluir</a></div>
+    <div class="botao-cinza "><a href="/projetos/">Voltar</a></div>
 {% endblock %}
