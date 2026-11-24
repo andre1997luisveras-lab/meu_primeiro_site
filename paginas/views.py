@@ -59,3 +59,10 @@ def editar_projeto(request, id):
     else:
         form = ProjetoForm(instance=projeto)
     return render(request, "novo_projeto.html", {"form": form})
+
+def excluir_projeto(request, id):
+    projeto = get_object_or_404(Projetos, id=id)
+    if request.method == "POST":
+        projeto.delete()
+        return redirect("/projetos/")
+    return render(request, "excluir_projeto.html", {"projeto": projeto})

@@ -4,8 +4,14 @@
     <h1>{{projeto.nome}}</h1>
     <p>{{projeto.descricao}}</p>
     <p>Ano: {{projeto.ano}}</p>
-    <p>Categoria: {{projeto.categoria}}</p>
+    <p>Categoria: {{ projeto.categoria }}</p>
+        {% if projeto.concluido %}
+            <p>Concluído ✔ </p>
+        {% else %}
+            <p>Em andamento</p>
+        {% endif %}
 
-    <a href="/projetos/{{ projeto.id }}/editar/">Editar</a> |
+    <a href="/projetos/{{ projeto.id }}/editar/">Editar</a> | 
+    <a href="/projetos/{{ projeto.id }}/excluir/">Excluir</a> |
     <a href="/projetos/">Voltar</a>
 {% endblock %}

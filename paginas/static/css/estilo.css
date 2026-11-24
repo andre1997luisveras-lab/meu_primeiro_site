@@ -31,5 +31,17 @@
         border-radius: 10px;
     }
 
+    .botao { padding: 6px 12px;
+        border-radius: 6px;
+        color: white;
+        text-decoration: none;
+    }
+    .botao-azul { background: #1d83ff; 
+    }
+    .botao-vermelho { background: #ff202f;
+    }
+    .botao-cinza { background: #808080;
+    }
+
     
 </style>
