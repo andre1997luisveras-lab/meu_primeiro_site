@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block conteudo %}
-    <h1>{{projeto.nome}}</h1>
+    <h1 class="botao">{{projeto.nome}}</h1>
     <p>{{projeto.descricao}}</p>
     <p>Ano: {{projeto.ano}}</p>
     <p>Categoria: {{ projeto.categoria }}</p>
@@ -11,7 +11,8 @@
             <p>Em andamento</p>
         {% endif %}
 
-    <div class="botao-azul "><a href="/projetos/{{ projeto.id }}/editar/">Editar</a></div>
-    <div class="botao-vermelho "><a href="/projetos/{{ projeto.id }}/excluir/">Excluir</a></div>
-    <div class="botao-cinza "><a href="/projetos/">Voltar</a></div>
+    
+    <a href="/projetos/{{ projeto.id }}/editar/" class="botao-azul">Editar</a>
+    <a href="/projetos/{{ projeto.id }}/excluir/" class="botao-vermelho">Excluir</a>
+    <a href="/projetos/" class="botao-cinza">Voltar</a>
 {% endblock %}

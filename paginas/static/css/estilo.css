@@ -31,16 +31,33 @@
         border-radius: 10px;
     }
 
-    .botao { padding: 6px 12px;
+    .botao { background-color: #c591ff; margin: 3px;
+        color: #FF3D7F;
+        border: 1px solid #cccccc;
         border-radius: 6px;
-        color: white;
-        text-decoration: none;
+        padding: 6px 12px;
+        margin-bottom: 6px;
     }
-    .botao-azul { background: #1d83ff; 
+    .botao-azul { background-color: #4d77ff; margin: 10px;
+        color: #ffffff;
+        border: 3px solid #3d00af;
+        border-radius: 6px;
+        padding: 6px 12px;
+        margin-bottom: 6px;
     }
-    .botao-vermelho { background: #ff202f;
+    .botao-vermelho { background-color: #ff4d4d; margin: 10px;
+        color: #ffffff;
+        border: 3px solid #af0000;
+        border-radius: 6px;
+        padding: 6px 12px;
+        margin-bottom: 6px;
     }
-    .botao-cinza { background: #808080;
+    .botao-cinza { background-color: #5f6885; margin: 10px;
+        color: #ffffff;
+        border: 3px solid #2f2641;
+        border-radius: 6px;
+        padding: 6px 12px;
+        margin-bottom: 6px;
     }
 
     

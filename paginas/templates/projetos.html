@@ -6,7 +6,7 @@
     <ul>
         {% for p in projetos %}
             <li>
-                <a href="/projetos/{{ p.id }}/">{{ p.nome }}</a>
+                <a href="/projetos/{{ p.id }}/" class="botao">{{ p.nome }}</a>
             </li>
         {% empty %}
             <p>Nenhum projeto cadastrado ainda.</p>
@@ -14,5 +14,5 @@
     </ul>
 
     <br>
-    <a href="/projetos/novo/">+ Novo projeto</a>
+    <a href="/projetos/novo/" class="botao">+ Novo projeto</a>
 {% endblock %}
